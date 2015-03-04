@@ -26,7 +26,7 @@ post '/jugar' do
 		@puntos2=4
 	end
 
-	anotar(params[:anota])
+	anoto(params[:anota])
 
 
 
@@ -35,7 +35,7 @@ post '/jugar' do
   erb :jugar
 end
 
-def anotar(anota)
+def anoto(anota)
 	
 	if anota=="1"
 		@puntos=@puntos1.to_i
@@ -54,7 +54,6 @@ def anotar(anota)
 	end
 	
 end
-
 
 
 
